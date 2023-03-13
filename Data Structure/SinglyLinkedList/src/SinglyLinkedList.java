@@ -61,25 +61,9 @@ public class SinglyLinkedList<E> {
 
     public void rotate() {
         addLast(removeFirst());
-        // لا تعمل للاسف
     }
 
-    public int Concatenating(SinglyLinkedList L, SinglyLinkedList M) {
-
-        SinglyLinkedList<String> result;
-        SinglyLinkedList<String> temp;
-        try {
-            result = (SinglyLinkedList<String>) L.clone(); // game1 copied into result
-            temp = (SinglyLinkedList<String>) M.clone(); // get copy of second list, which we will destroy in the process of concatenation
-        } catch (CloneNotSupportedException e) { // can only happen if it was not implemented
-            return 0;
-        }
-        while (!temp.isEmpty()) {
-            result.addLast(temp.removeFirst());
-        }
-
-        return result;
-    }
+  
 
 
     public void reverse() {
