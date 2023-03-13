@@ -52,15 +52,10 @@ public class SinglyLinkedList<E> {
         return Deleted;
     }
 
-    public void Finding() {
-        while (head.next != null) {
-            System.out.println(head.next.Element);
-            head = head.next;
-        }
-    }
+
 
     public void rotate() {
-        addLast(removeFirst());
+      tail.element=head.element;
     }
 
   
