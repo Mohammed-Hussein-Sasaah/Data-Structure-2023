@@ -74,6 +74,20 @@ public class SinglyLinkedList<E> {
             head = R;
         }
     }
+    
+        public E print()
+    {
+        if (isEmpty()) 
+            return null;
+
+        E p = head.element;
+        head=head.next;
+        if (p == tail.element && tail.next == null)
+            p = tail.element;
+
+        return p;
+
+    }
 
     static class Node<E> {
         E Element;
