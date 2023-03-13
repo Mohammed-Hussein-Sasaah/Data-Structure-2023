@@ -13,7 +13,7 @@ public class Test {
 
         System.out.println(A.Last());
         while (!A.isEmpty())
-            System.out.print(A.removeFirst()+"\t");
+            System.out.println(A.removeFirst());
 
         System.out.println(A.rotate());
     }
